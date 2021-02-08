@@ -7,7 +7,7 @@ class Scraper
   html = open(index_url) #html = open URL
 
   page = Nokogiri::HTML(html) #page = the URL and lets us use Nokogiri keywrods and methods
-     #binding.pry
+     binding.pry
      
     students = [] #End results need to be an Array with different hashes [ {:name => "nabeil", :location => "NY"}, {:name => "jason", :location => "CA"}. {  }, {  }]
     
